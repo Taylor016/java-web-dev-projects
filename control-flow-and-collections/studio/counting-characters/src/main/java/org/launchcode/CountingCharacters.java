@@ -13,14 +13,14 @@ public class CountingCharacters {
 
         HashMap<Character, Integer> counts = new HashMap<>();
 
-        for(char letter : charArray) {
-            if(counts.containsKey(letter)) {
+        for (char letter : charArray) {
+            if (counts.containsKey(letter)) {
                 counts.put(letter, counts.get(letter) + 1);
             } else {
                 counts.put(letter, 1);
             }
         }
-        for(Map.Entry<Character, Integer> count : counts.entrySet()) {
+        for (Map.Entry<Character, Integer> count : counts.entrySet()) {
             System.out.println(count.getKey() + ": " + count.getValue());
         }
     }
